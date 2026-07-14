@@ -15,3 +15,19 @@ export interface CategoryDefinition {
   description: string;
   icon: string;
 }
+
+export interface PasswordOptions {
+  length: number;
+  uppercase: boolean;
+  lowercase: boolean;
+  numbers: boolean;
+  symbols: boolean;
+  excludeAmbiguous: boolean;
+}
+
+export interface PasswordStrength {
+  score: number;
+  label: string;
+  color: string;
+  suggestions: string[];
+}
